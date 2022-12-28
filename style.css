@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: aliceblue;
+}
+.search-bar-container{
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 5px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    margin: 10px;
+    position: relative;
+    transition: width 1.5s ;
+}
+.magnifier{
+    position: absolute;
+    cursor: pointer;
+    left: 10px;
+}
+.mic-icon{
+    position: absolute;
+    right: 10px;
+}
+.input{
+    background-color: transparent;
+    margin: 10px 50px;
+    border: none;
+    outline: none;
+    color: rgb(100, 100, 100);
+}
+.active.search-bar-container{
+    width: 50px;
+}
+.active .input{
+    width: 0;
+}
+.active .mic-icon{
+    width: 0;
+}
